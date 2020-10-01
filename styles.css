@@ -40,3 +40,16 @@
 .arrow-right{
   cursor: pointer
 }
+.main {display: flex;
+width: 400px;
+height: 200px;
+margin-top: 50px;
+flex-direction: column;
+}
+.buy {width: 200px;
+height: 20px; background-color: red;
+border: 1px solid rebeccapurple;
+}
+.products{width: 202px; background-color: green;
+height: 180px;
+}
