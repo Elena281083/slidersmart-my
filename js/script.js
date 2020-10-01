@@ -51,6 +51,9 @@ arrowRight.onclick = function(){
 
 //start
 let linkSpoiler = document.getElementsByClassName('buy');
-linkSpoiler[0].onclick = function(){
-  document.getElementsByClassName('main')[0].classList.toggle('main_open');
+for(let i = 0; i < linkSpoiler.length; i++){
+  linkSpoiler[i].onclick = function(){
+    // document.getElementsByClassName('main')[i].classList.toggle('main_open');
+    this.parentElement.classList.toggle('main_open');
+  }
 }
