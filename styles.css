@@ -40,24 +40,43 @@
 .arrow-right{
   cursor: pointer
 }
-.main {display: flex;
-width: 400px;
-height: 200px;
-margin-top: 50px;
-flex-direction: column;
+
+
+.main {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  flex-direction: column;
 }
-.buy {width: 200px;
-height: 20px;
-border: 1px solid rebeccapurple;
-display: flex;
+.buy {
+  width: 200px;
+  height: 20px;
+  border: 1px solid rebeccapurple;
+  display: flex;
+  cursor: pointer;
 }
 .link {
   margin-left: 100px;
 }
 .link a {color: red; 
-font-weight: bold;
-text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
 }
-.products{width: 202px; background-color: green;
-height: 180px; 
+.products{
+  width: 202px; 
+  background-color: green;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.arrow{
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: all 0.2s ease;
+}
+.main_open .products{
+  max-height: 500px;
+}
+.main_open .arrow{
+  transform: rotate(-90deg);
 }

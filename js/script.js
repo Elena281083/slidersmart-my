@@ -47,9 +47,10 @@ arrowRight.onclick = function(){
     setTimeout(function(){move=false;}, 1000);
   }
 };
+
+
 //start
-let linkMain = document.getElementsByClassName('arrow');
-let productsMain = document.getElementsByClassName('products');
-linkMain[0].onclick = function(){
-  products.classList.toggle('products');
+let linkSpoiler = document.getElementsByClassName('buy');
+linkSpoiler[0].onclick = function(){
+  document.getElementsByClassName('main')[0].classList.toggle('main_open');
 }
