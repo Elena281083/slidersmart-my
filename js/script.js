@@ -47,3 +47,9 @@ arrowRight.onclick = function(){
     setTimeout(function(){move=false;}, 1000);
   }
 };
+//start
+let linkMain = document.getElementsByClassName('arrow');
+let productsMain = document.getElementsByClassName('products');
+linkMain[0].onclick = function(){
+  products.classList.toggle('products');
+}
